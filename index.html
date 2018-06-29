@@ -3,9 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <title>Exercice 9</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  			  crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="firstText">
@@ -17,9 +14,13 @@
   <div id="thirdText">
     Nunc maximus at purus id malesuada. Praesent congue dui vitae pellentesque eleifend. Nunc in ligula enim. Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc. Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra. Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut. Maecenas lacinia ornare eros vitae lacinia. Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
   <script>
-    $('#firstText').css('border','5px dashed').css('border-color','green');
-    $('#thirdText').css('border','5px dashed').css('border-color','green');
+    $(function () {
+      $('#firstText, #thirdText').css('border','5px green dashed');
+    });
   </script>
 </body>
 </html>
